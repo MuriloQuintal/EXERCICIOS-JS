@@ -1,0 +1,45 @@
+body{
+    background-color: rgba(62, 114, 114, 0.863); /*cor do fundo*/
+    text-align: center; /*posição do texto*/
+    font-family: Georgia;/*fonte escolhida*/
+}
+h1{
+    color: rgb(4, 212, 91);/*cor do texto*/
+    text-transform: uppercase; /*deixar maiusculo, lowecase minuscula*/
+    font-family:Arial rgb(116, 116, 226);
+    letter-spacing: 3px; /*espacamento entre caracteres*/
+}
+h1:hover{ /*altera assim que passar o mouse sobre o campo selecionado como o h1 neste caso*/
+    color: blue;
+    cursor:crosshair; /*trocar o cursor do mouse*/
+}
+input{
+    border: 1.8px solid rgb(5, 100, 145);
+    border-radius: 6px;
+    margin: 8px;
+    font-size: 16px;
+}
+button{
+    border: 25;
+    background-color: rgb(97, 85, 19);
+    color: antiquewhite;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 20px;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px;
+    background-color:  brown;
+    color: rgb(233, 183, 183);
+    
+}
+h3{
+    background-color: rgb(223, 173, 37);
+    font-size: 25px;
+}
+span{
+    color: brown;
+    font-size: 25px;
+    font-family:Arial ;
+}
