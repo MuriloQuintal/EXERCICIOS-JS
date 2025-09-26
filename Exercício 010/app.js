@@ -1,3 +1,3 @@
 function fnMediaAluno(){
-    console.log ("Vaida certo")
+    console.log("Vaida certo")
 }
