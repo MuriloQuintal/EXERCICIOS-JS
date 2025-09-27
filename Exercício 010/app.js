@@ -15,12 +15,16 @@ function fnCalcularMedia(){
 function fnExibir(painel_exibir){
 document.getElementById("painel_resultado").style.display="none"
 document.getElementById("painel_formulario").style.display="none"
+
 if(painel_exibir == "resultado"){
     document.getElementById("painel_resultado").style.display="block"
 }else if (painel_exibir == "formulario"){
     document.getElementById("painel_formulario").style.display="block"
-  
+  fnLimparFormulario()
 }  
+}
+function fnLimparFormulario(){
+    document.getElementById("painel_formulario").reset()
 }
 
 
