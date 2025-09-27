@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 010</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <h1>Exercício 010</h1>
     <blockquote>"For more, Run Forest, Run!"</blockquote>
     <p>10 Calcular a média de N alunos.</p>
     <hr>
-    <form>
-        <label>Digite Nome do aluno</label>
+    <form id="painel_formulario">
+        <label>Digite Nome do aluno</label><br>
         <input id="nome"><br>
-        <label>Digite uma nota</label>
-        <input type="number" id="nota1"><br>
-        <label>Digite outra nota</label>
-        <input type="number" id="nota2"><br>
-        <label>Digite mais outra nota</label>
-        <input type="number" id="nota3"><br>
-        <label>Digite a nota da ultima materia</label>
-        <input type="number" id="nota4"><br><br>
-        <button onclick=fnMediaAluno() type="button">Média</button>
-
+        <label>Digite uma nota</label><br>
+        <input type="number" id="n1"><br>
+        <label>Digite outra nota</label><br>
+        <input type="number" id="n2"><br>
+        <label>Digite mais outra nota</label><br>
+        <input type="number" id="n3"><br>
+        <label>Digite a nota da ultima materia</label><br>
+        <input type="number" id="n4"><br><br>
+        <button onclick="fnCalcularMedia()" type="button">Calcular</button>
     </form>
+
+    <div id="painel_resultado">
+        <h3>
+            Média:
+            <span id="nome_resultado"></span> - 
+            <span id="media">10</span>
+        </h3>
+        <button onclick = "fnExibir('formulario')" type="button">Calcular a média de outro aluno</button>
+    </div>
     
-    
+    <script src="app.js"></script>
 </body>
 </html>
