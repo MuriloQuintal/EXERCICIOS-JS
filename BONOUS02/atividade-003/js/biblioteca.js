@@ -11,13 +11,14 @@ function trocaBanner() {
 	document.querySelector('#banner img').src = banners[bannerAtual];
 }
 
-var banner_controle = setInterval(trocaBanner, 4000);
+var banner_controle = setInterval(trocaBanner, 1000);
 
 
 function Controle(acao) {
 	if (acao == "play") {
-		banner_controle = setInterval(trocaBanner, 4000);
+		banner_controle = setInterval(trocaBanner, 1000);
 	}else {
+		
 		clearInterval(banner_controle)
 		
 	}
