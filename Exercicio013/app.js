@@ -25,8 +25,6 @@ function fnListarVeiculos(){
         document.getElementById("tabela_veiculos").innerHTML += `</tr>`
     }
 
-
-
 }
-// function fnLimpar(){
-//     getElementById("numero_vaga")clea
+function fnLimpar(){
+     document.getElementById("form_veiculos").reset()}
