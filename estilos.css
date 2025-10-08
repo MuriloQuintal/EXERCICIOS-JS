@@ -1,0 +1,13 @@
+
+.movimento{
+ 
+    transition: transform 0.5s ease;
+}
+.movimento:hover{
+    transform: translatey(-15px);
+
+}
+
+.cartao{ 
+    background-color: rgba(37, 165, 144, 0.808)!important
+}
