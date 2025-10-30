@@ -16,12 +16,12 @@ function fnListar(){
 
 contatos.forEach(function(umContato,i){
     dados +=
-    `<div class="card" style="width: 18rem;" >
+    `<div class="card" style="width: 18rem;"  >
             <img src="${umContato.foto}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">${umContato.nome}</h5>
               <p class="card-text">${umContato.telefone} - ${umContato.email} </p>
-              <a href="#" class="btn btn-danger">Excluir</a>
+              <button type="button" onclick = 'fnExcluir(${i})' class="btn btn-danger">Excluir</a>
             </div>
      </div>`
 
@@ -29,9 +29,14 @@ contatos.forEach(function(umContato,i){
 })
 document.getElementById('listaDeContatos').innerHTML = dados
 }
-function fnExcluir(){}
-
-
+function fnExcluir(indice){   //função criada para excluir  ocarde criado, o (indice,1) siginificar excluir apenaso carde que tem o button excluir, se color outro numero sera o total de cardes excluidos
+    contatos.splice(indice,1)
+    fnListar()
+    }
+    function fnLimpar(){     //funcção criada para limpar os dados do formulario
+        document.getElementById('formulario').reset()    //resete para limpar o endereço do indice do formulario com nome de 'formulario
+    }
+    
 // function fnExemplo(){
 //     alert("oi")
 // }
@@ -39,6 +44,7 @@ function fnExcluir(){}
 document.getElementById('btSalvar').addEventListener('click', function(){
     fnSalvar()
     fnListar()
+    fnLimpar()    //funcão limpar os dados do formulario
 })
 
 
